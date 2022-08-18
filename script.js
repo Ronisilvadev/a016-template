@@ -35,3 +35,56 @@ const filmes = [
 ]
 
 // escreva seu código abaixo 👇🏻
+
+
+
+  for (let i in filmes) {
+    // i => key => string
+    
+    for (let j in filmes[i]) {
+
+      console.log( `filme: ${filmes[i].elenco} digirido por ${filmes[i].diretor} tem o elento ${filmes[i].elenco}`)
+     
+    }
+  }
+
+
+
+
+
+// const megaSena = [
+//   // array pai
+//   [1, 2, 3, 4, 5, 6], // array filho
+//   [11, 22, 33, 44, 55, 66], // array filho
+//   [10, 20, 30, 40, 50, 60], // array filho
+//   [9, 19, 29, 29, 49, 59], // array filho
+// ]
+
+// // exercicio 02 e 03
+// if (megaSena.length === 4) {
+//   for (let i in megaSena) {
+//     // i => key => string
+//     let sorteio = `Sorteio ${Number(i) + 1}: `
+//     for (let j of megaSena[i]) {
+//       sorteio += `${j} `
+//     }
+//     console.log(sorteio)
+//   }
+// } else {
+//   console.log('É necessário alterar o número de itens do array')
+// }
+
+// // exercicio 01
+// if (megaSena.length === 4) {
+//   for (let i = 0; i < megaSena.length; i++) {
+//     // percorre o ARRAY PAI
+//     let sorteio = `Sorteio ${i + 1}: `
+//     for (let j = 0; j < megaSena[i].length; j++) {
+//       // percorre o array filho
+//       sorteio += `${megaSena[i][j]} `
+//     }
+//     console.log(sorteio)
+//   }
+// } else {
+//   console.log('É necessário alterar o número de itens do array')
+// }
